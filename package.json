@@ -1,0 +1,44 @@
+{
+    "name": "adminjs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon app.js",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@adminjs/express": "^5.0.0",
+        "@adminjs/mongoose": "^3.0.0",
+        "admin-bro": "^4.0.1",
+        "admin-bro-expressjs": "^2.1.1",
+        "admin-bro-mongoose": "^0.5.2",
+        "adminjs": "^6.0.6",
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.0",
+        "connect-mongodb-session": "^3.1.1",
+        "dotenv": "^16.0.1",
+        "eslint-config-prettier": "^8.5.0",
+        "express-async-errors": "^3.1.1",
+        "express-session": "^1.17.3",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^6.5.1",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.5-lts.1",
+        "nodemailer": "^6.7.8",
+        "nodemailer-sendgrid-transport": "^0.2.0",
+        "nodemon": "^2.0.19",
+        "pdfkit": "^0.13.0",
+        "pg": "^8.7.3",
+        "prettier": "^2.7.1",
+        "winston": "^3.8.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.21.0"
+    }
+}

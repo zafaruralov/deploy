@@ -1,0 +1,446 @@
+2022-08-12 14:09:03:93 [35mhttp[39m: [35mGET /products - - - ms[39m
+[35m[39m
+2022-08-12 14:23:49:2349 [31merror[39m: [31mProduct validation failed: image: Path `image` is required., categoryId: Path `categoryId` is required.[39m
+2022-08-12 14:23:49:2349 [35mhttp[39m: [35mPOST /products 500 - 60.633 ms[39m
+[35m[39m
+2022-08-12 14:24:27:2427 [31merror[39m: [31mProduct validation failed: categoryId: Cast to ObjectId failed for value "21" (type string) at path "categoryId" because of "BSONTypeError"[39m
+2022-08-12 14:24:27:2427 [35mhttp[39m: [35mPOST /products 500 - 5.880 ms[39m
+[35m[39m
+2022-08-12 14:41:06:416 [35mhttp[39m: [35mPOST /category 201 - 246.017 ms[39m
+[35m[39m
+2022-08-12 14:41:57:4157 [35mhttp[39m: [35mPOST /products 201 - 232.351 ms[39m
+[35m[39m
+2022-08-12 14:43:10:4310 [35mhttp[39m: [35mGET /products 200 - 221.139 ms[39m
+[35m[39m
+2022-08-12 14:43:36:4336 [35mhttp[39m: [35mGET /products 200 - 1171.527 ms[39m
+[35m[39m
+2022-08-12 14:43:53:4353 [35mhttp[39m: [35mGET /products 200 - 443.111 ms[39m
+[35m[39m
+2022-08-12 14:43:54:4354 [35mhttp[39m: [35mGET /favicon.ico 404 - 0.897 ms[39m
+[35m[39m
+2022-08-12 14:44:49:4449 [35mhttp[39m: [35mPOST /products 201 - 252.220 ms[39m
+[35m[39m
+2022-08-12 14:44:54:4454 [35mhttp[39m: [35mGET /products 200 - 440.671 ms[39m
+[35m[39m
+2022-08-12 14:45:07:457 [35mhttp[39m: [35mGET /products 200 - 439.182 ms[39m
+[35m[39m
+2022-08-12 15:00:32:032 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 1339.905 ms[39m
+[35m[39m
+2022-08-12 15:01:04:14 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 629.207 ms[39m
+[35m[39m
+2022-08-12 15:01:22:122 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 227.892 ms[39m
+[35m[39m
+2022-08-12 15:02:16:216 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 996.526 ms[39m
+[35m[39m
+2022-08-12 15:02:28:228 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 1330.642 ms[39m
+[35m[39m
+2022-08-12 15:04:45:445 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 470.878 ms[39m
+[35m[39m
+2022-08-12 15:05:04:54 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 1666.726 ms[39m
+[35m[39m
+2022-08-12 15:17:15:1715 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 1049.768 ms[39m
+[35m[39m
+2022-08-12 15:17:18:1718 [35mhttp[39m: [35mGET /products/ 200 - 449.066 ms[39m
+[35m[39m
+2022-08-12 15:17:34:1734 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 455.106 ms[39m
+[35m[39m
+2022-08-12 15:24:20:2420 [35mhttp[39m: [35mPUT /products/62f62065a228e31a1bb84240 200 - 237.606 ms[39m
+[35m[39m
+2022-08-12 15:24:44:2444 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 489.851 ms[39m
+[35m[39m
+2022-08-12 15:24:52:2452 [35mhttp[39m: [35mGET /products/ 200 - 462.631 ms[39m
+[35m[39m
+2022-08-12 15:25:45:2545 [35mhttp[39m: [35mPUT /products/62f62065a228e31a1bb84240 200 - 228.420 ms[39m
+[35m[39m
+2022-08-12 15:26:51:2651 [35mhttp[39m: [35mPATCH /products/62f62065a228e31a1bb84240 200 - 235.100 ms[39m
+[35m[39m
+2022-08-12 15:26:55:2655 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 484.256 ms[39m
+[35m[39m
+2022-08-12 15:44:21:4421 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 1178.072 ms[39m
+[35m[39m
+2022-08-12 15:44:25:4425 [35mhttp[39m: [35mPOST /products/62f62065a228e31a1bb84240 200 - 244.776 ms[39m
+[35m[39m
+2022-08-12 15:45:19:4519 [35mhttp[39m: [35mPOST /products/62f62065a228e31a1bb84240 200 - 2318.255 ms[39m
+[35m[39m
+2022-08-12 15:46:03:463 [35mhttp[39m: [35mPOST /products/62f62065a228e31a1bb84240 200 - 1318.923 ms[39m
+[35m[39m
+2022-08-12 15:50:06:506 [31merror[39m: [31mproducts.save is not a function[39m
+2022-08-12 15:50:06:506 [35mhttp[39m: [35mPUT /products/62f62065a228e31a1bb84240 500 - 23.830 ms[39m
+[35m[39m
+2022-08-12 15:51:49:5149 [35mhttp[39m: [35mPUT /products/62f62065a228e31a1bb84240 200 - 959.308 ms[39m
+[35m[39m
+2022-08-12 15:51:57:5157 [35mhttp[39m: [35mGET /products/62f62065a228e31a1bb84240 200 - 553.755 ms[39m
+[35m[39m
+2022-08-12 17:30:13:3013 [35mhttp[39m: [35mGET /products/ 200 - 696.647 ms[39m
+[35m[39m
+2022-08-12 17:30:23:3023 [35mhttp[39m: [35mGET /products/62f621115b5948233af6022e 200 - 1169.421 ms[39m
+[35m[39m
+2022-08-12 17:30:29:3029 [35mhttp[39m: [35mDELETE /products/62f621115b5948233af6022e 200 - 245.192 ms[39m
+[35m[39m
+2022-08-12 17:30:38:3038 [35mhttp[39m: [35mGET /products/62f621115b5948233af6022e 200 - 235.030 ms[39m
+[35m[39m
+2022-08-12 17:30:42:3042 [35mhttp[39m: [35mGET /products/ 200 - 1266.279 ms[39m
+[35m[39m
+2022-08-12 17:35:54:3554 [35mhttp[39m: [35mGET /category/62f62032a228e31a1bb8423e 404 - 3.347 ms[39m
+[35m[39m
+2022-08-12 17:36:40:3640 [35mhttp[39m: [35mGET /category/62f62032a228e31a1bb8423e 404 - 7.477 ms[39m
+[35m[39m
+2022-08-12 17:36:42:3642 [35mhttp[39m: [35mGET /category/62f62032a228e31a1bb8423e 404 - 1.028 ms[39m
+[35m[39m
+2022-08-12 17:37:16:3716 [31merror[39m: [31mParameter "filter" to findOne() must be an object, got 62f62032a228e31a1bb8423e[39m
+2022-08-12 17:37:16:3716 [35mhttp[39m: [35mGET /category/62f62032a228e31a1bb8423e 500 - 11.446 ms[39m
+[35m[39m
+2022-08-12 17:37:40:3740 [31merror[39m: [31mParameter "filter" to find() must be an object, got 62f62032a228e31a1bb8423e[39m
+2022-08-12 17:37:40:3740 [35mhttp[39m: [35mGET /category/62f62032a228e31a1bb8423e 500 - 33.238 ms[39m
+[35m[39m
+2022-08-12 17:38:01:381 [35mhttp[39m: [35mGET /category/62f62032a228e31a1bb8423e 200 - 3273.965 ms[39m
+[35m[39m
+2022-08-12 20:06:54:654 [35mhttp[39m: [35mPOST /login/ 200 - 251.020 ms[39m
+[35m[39m
+2022-08-12 20:07:21:721 [31merror[39m: [31mInvalid status code: [ [Object] ][39m
+2022-08-12 20:08:07:87 [35mhttp[39m: [35mGET /category - - 478.768 ms[39m
+[35m[39m
+2022-08-12 20:10:17:1017 [35mhttp[39m: [35mGET /category 200 - 464.494 ms[39m
+[35m[39m
+2022-08-12 23:46:49:4649 [35mhttp[39m: [35mGET / 404 - 9.075 ms[39m
+[35m[39m
+2022-08-13 12:58:14:5814 [35mhttp[39m: [35mPOST /signup/ 201 - 698.871 ms[39m
+[35m[39m
+2022-08-13 14:49:02:492 [35mhttp[39m: [35mPOST /signup/ 201 - 966.381 ms[39m
+[35m[39m
+2022-08-13 14:49:03:493 [31merror[39m: [31mThe from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements[39m
+2022-08-13 14:50:48:5048 [35mhttp[39m: [35mPOST /signup/ 201 - 603.378 ms[39m
+[35m[39m
+2022-08-13 14:50:49:5049 [31merror[39m: [31mThe from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements[39m
+2022-08-13 14:51:35:5135 [35mhttp[39m: [35mPOST /signup/ 400 - 2147.315 ms[39m
+[35m[39m
+2022-08-13 15:49:00:490 [35mhttp[39m: [35mPOST /signup/ 400 - 232.046 ms[39m
+[35m[39m
+2022-08-13 15:49:27:4927 [35mhttp[39m: [35mPOST /signup/ 201 - 647.115 ms[39m
+[35m[39m
+2022-08-13 15:49:28:4928 [31merror[39m: [31mThe from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements[39m
+2022-08-13 15:52:10:5210 [35mhttp[39m: [35mPOST /signup/ 201 - 700.636 ms[39m
+[35m[39m
+2022-08-13 15:52:11:5211 [31merror[39m: [31mThe from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements[39m
+2022-08-13 15:54:36:5436 [31merror[39m: [31mThe from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements[39m
+2022-08-13 15:54:36:5436 [35mhttp[39m: [35mPOST /signup/ 500 - 1579.151 ms[39m
+[35m[39m
+2022-08-13 20:25:03:253 [35mhttp[39m: [35mGET /products/ 200 - 469.029 ms[39m
+[35m[39m
+2022-08-13 20:25:47:2547 [35mhttp[39m: [35mGET /products/ 200 - 459.750 ms[39m
+[35m[39m
+2022-08-13 20:26:00:260 [35mhttp[39m: [35mGET /products/ 200 - 460.528 ms[39m
+[35m[39m
+2022-08-13 20:26:06:266 [35mhttp[39m: [35mPOST /products/ 201 - 259.762 ms[39m
+[35m[39m
+2022-08-13 20:27:43:2743 [35mhttp[39m: [35mPOST /products/ 201 - 998.833 ms[39m
+[35m[39m
+2022-08-13 20:27:49:2749 [35mhttp[39m: [35mPOST /products/ 201 - 276.194 ms[39m
+[35m[39m
+2022-08-13 20:28:02:282 [35mhttp[39m: [35mPOST /products/ 201 - 238.072 ms[39m
+[35m[39m
+2022-08-13 20:28:11:2811 [35mhttp[39m: [35mGET /products/ 200 - 464.883 ms[39m
+[35m[39m
+2022-08-13 20:28:11:2811 [35mhttp[39m: [35mGET /favicon.ico 404 - 3.321 ms[39m
+[35m[39m
+2022-08-13 20:28:14:2814 [35mhttp[39m: [35mGET /products/ 304 - 450.103 ms[39m
+[35m[39m
+2022-08-13 20:28:20:2820 [35mhttp[39m: [35mGET /products/ 200 - 449.773 ms[39m
+[35m[39m
+2022-08-13 20:28:37:2837 [35mhttp[39m: [35mPOST /products/ 201 - 231.327 ms[39m
+[35m[39m
+2022-08-13 20:29:02:292 [35mhttp[39m: [35mGET /products/ 200 - 451.087 ms[39m
+[35m[39m
+2022-08-13 20:30:01:301 [35mhttp[39m: [35mGET /products/ 200 - 470.159 ms[39m
+[35m[39m
+2022-08-13 23:50:02:502 [35mhttp[39m: [35mGET / 404 - 3.525 ms[39m
+[35m[39m
+2022-08-13 23:56:49:5649 [35mhttp[39m: [35mGET /favicon.ico 404 - 2.707 ms[39m
+[35m[39m
+2022-08-14 00:31:38:3138 [35mhttp[39m: [35mGET /products?name=samsung 200 - 260.567 ms[39m
+[35m[39m
+2022-08-14 00:32:31:3231 [35mhttp[39m: [35mGET /products?name=samsung%20A50 200 - 228.595 ms[39m
+[35m[39m
+2022-08-14 00:32:36:3236 [35mhttp[39m: [35mGET /products?name=samsungA50 200 - 222.286 ms[39m
+[35m[39m
+2022-08-14 00:32:55:3255 [35mhttp[39m: [35mGET /products?cost=500$ 200 - 233.056 ms[39m
+[35m[39m
+2022-08-14 00:33:11:3311 [35mhttp[39m: [35mGET /products?count=5 200 - 228.913 ms[39m
+[35m[39m
+2022-08-15 01:25:35:2535 [35mhttp[39m: [35mGET /operator 200 - 510.834 ms[39m
+[35m[39m
+2022-08-15 01:25:53:2553 [35mhttp[39m: [35mGET /products 200 - 506.426 ms[39m
+[35m[39m
+2022-08-15 01:26:58:2658 [35mhttp[39m: [35mGET /products 200 - 488.733 ms[39m
+[35m[39m
+2022-08-15 01:27:07:277 [35mhttp[39m: [35mPOST /products 201 - 271.603 ms[39m
+[35m[39m
+2022-08-15 01:27:51:2751 [35mhttp[39m: [35mPOST /products 201 - 273.449 ms[39m
+[35m[39m
+2022-08-15 01:28:08:288 [35mhttp[39m: [35mPOST /products 201 - 249.945 ms[39m
+[35m[39m
+2022-08-15 01:29:03:293 [35mhttp[39m: [35mPOST /products 201 - 285.584 ms[39m
+[35m[39m
+2022-08-15 01:29:20:2920 [35mhttp[39m: [35mPOST /products 201 - 252.241 ms[39m
+[35m[39m
+2022-08-15 01:29:25:2925 [35mhttp[39m: [35mGET /products 200 - 491.909 ms[39m
+[35m[39m
+2022-08-15 01:29:58:2958 [35mhttp[39m: [35mPOST /products 201 - 246.799 ms[39m
+[35m[39m
+2022-08-15 01:30:03:303 [35mhttp[39m: [35mGET /products 200 - 486.396 ms[39m
+[35m[39m
+2022-08-15 01:30:24:3024 [35mhttp[39m: [35mGET /operator 200 - 480.474 ms[39m
+[35m[39m
+2022-08-15 01:37:23:3723 [35mhttp[39m: [35mGET /operator 200 - 482.517 ms[39m
+[35m[39m
+2022-08-15 01:37:42:3742 [35mhttp[39m: [35mGET /operator 200 - 2014.411 ms[39m
+[35m[39m
+2022-08-15 01:38:14:3814 [35mhttp[39m: [35mGET /operator 200 - 2863.863 ms[39m
+[35m[39m
+2022-08-15 01:39:29:3929 [35mhttp[39m: [35mPOST /operator/62f95ad89c20648c3b97fea0 404 - 4.940 ms[39m
+[35m[39m
+2022-08-15 01:40:48:4048 [35mhttp[39m: [35mPOST /operator/62f95ad89c20648c3b97fea0 404 - 2.823 ms[39m
+[35m[39m
+2022-08-15 01:40:55:4055 [35mhttp[39m: [35mGET /operator/62f95ad89c20648c3b97fea0 200 - 492.250 ms[39m
+[35m[39m
+2022-08-15 01:41:08:418 [35mhttp[39m: [35mPUT /operator/62f95ad89c20648c3b97fea0 200 - 509.910 ms[39m
+[35m[39m
+2022-08-15 01:48:31:4831 [35mhttp[39m: [35mGET /courier 200 - 512.820 ms[39m
+[35m[39m
+2022-08-15 01:59:07:597 [35mhttp[39m: [35mGET /accountant 200 - 485.315 ms[39m
+[35m[39m
+2022-08-15 02:25:12:2512 [35mhttp[39m: [35mPOST /signup/ 400 - 256.975 ms[39m
+[35m[39m
+2022-08-15 02:25:37:2537 [31merror[39m: [31mThe from address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. Visit https://sendgrid.com/docs/for-developers/sending-email/sender-identity/ to see the Sender Identity requirements[39m
+2022-08-15 02:25:37:2537 [35mhttp[39m: [35mPOST /signup/ 500 - 2072.574 ms[39m
+[35m[39m
+2022-08-15 02:27:11:2711 [31merror[39m: [31mCannot read properties of undefined (reading 'userType')[39m
+2022-08-15 02:27:11:2711 [35mhttp[39m: [35mGET /operator 500 - 14.444 ms[39m
+[35m[39m
+2022-08-15 02:43:24:4324 [35mhttp[39m: [35mPOST /signup/ 200 - 405.523 ms[39m
+[35m[39m
+2022-08-15 02:43:40:4340 [31merror[39m: [31mCannot read properties of undefined (reading 'userType')[39m
+2022-08-15 02:43:40:4340 [35mhttp[39m: [35mGET /operator 500 - 12.845 ms[39m
+[35m[39m
+2022-08-15 02:48:03:483 [31merror[39m: [31mUser has no needed permissions to execute this operation[39m
+2022-08-15 02:48:03:483 [35mhttp[39m: [35mGET /operator 403 - 70.099 ms[39m
+[35m[39m
+2022-08-15 02:49:44:4944 [31merror[39m: [31mUser has no needed permissions to execute this operation[39m
+2022-08-15 02:49:44:4944 [35mhttp[39m: [35mGET /operator 403 - 25.136 ms[39m
+[35m[39m
+2022-08-15 02:50:02:502 [31merror[39m: [31mUser has no needed permissions to execute this operation[39m
+2022-08-15 02:50:02:502 [35mhttp[39m: [35mGET /operator 403 - 39.323 ms[39m
+[35m[39m
+2022-08-15 02:50:51:5051 [31merror[39m: [31mUser has no needed permissions to execute this operation[39m
+2022-08-15 02:50:51:5051 [35mhttp[39m: [35mGET /operator 403 - 26.555 ms[39m
+[35m[39m
+2022-08-15 02:51:34:5134 [31merror[39m: [31mUser has no needed permissions to execute this operation[39m
+2022-08-15 02:51:34:5134 [35mhttp[39m: [35mGET /operator 403 - 14.565 ms[39m
+[35m[39m
+2022-08-15 02:51:50:5150 [31merror[39m: [31mUser has no needed permissions to execute this operation[39m
+2022-08-15 02:51:50:5150 [35mhttp[39m: [35mGET /operator 403 - 26.019 ms[39m
+[35m[39m
+2022-08-15 02:52:19:5219 [35mhttp[39m: [35mPOST /signup/ 200 - 422.234 ms[39m
+[35m[39m
+2022-08-15 02:52:27:5227 [35mhttp[39m: [35mGET /operator 200 - 512.232 ms[39m
+[35m[39m
+2022-08-15 02:54:15:5415 [31merror[39m: [31mCannot read properties of null (reading 'save')[39m
+2022-08-15 02:54:15:5415 [35mhttp[39m: [35mPOST /signup/ 500 - 893.429 ms[39m
+[35m[39m
+2022-08-15 02:56:07:567 [31merror[39m: [31mUSER is not a constructor[39m
+2022-08-15 02:56:07:567 [35mhttp[39m: [35mPOST /signup/ 500 - 405.318 ms[39m
+[35m[39m
+2022-08-15 03:02:18:218 [35mhttp[39m: [35mPOST /signup/ 200 - 694.502 ms[39m
+[35m[39m
+2022-08-15 03:02:22:222 [31merror[39m: [31mThere is user with this email: courier@gmail.com[39m
+2022-08-15 03:02:22:222 [35mhttp[39m: [35mPOST /signup/ 400 - 381.203 ms[39m
+[35m[39m
+2022-08-15 03:11:24:1124 [31merror[39m: [31mCannot set headers after they are sent to the client[39m
+2022-08-15 03:11:24:1124 [35mhttp[39m: [35mPOST /login/ 500 - 408.031 ms[39m
+[35m[39m
+2022-08-15 03:12:22:1222 [31merror[39m: [31mUnexpected token } in JSON at position 66[39m
+2022-08-15 03:15:17:1517 [31merror[39m: [31mUnexpected token } in JSON at position 66[39m
+2022-08-15 03:15:20:1520 [31merror[39m: [31mUnexpected token } in JSON at position 66[39m
+2022-08-15 03:15:51:1551 [31merror[39m: [31mCannot set headers after they are sent to the client[39m
+2022-08-15 03:15:51:1551 [35mhttp[39m: [35mPOST /login/ 500 - 697.654 ms[39m
+[35m[39m
+2022-08-15 03:16:02:162 [31merror[39m: [31mUnexpected token } in JSON at position 66[39m
+2022-08-15 03:16:18:1618 [31merror[39m: [31mCannot set headers after they are sent to the client[39m
+2022-08-15 03:16:18:1618 [35mhttp[39m: [35mPOST /login/ 500 - 604.022 ms[39m
+[35m[39m
+2022-08-15 03:16:36:1636 [31merror[39m: [31mjwt token yaroqsiz[39m
+2022-08-15 03:16:36:1636 [35mhttp[39m: [35mGET /operator 500 - 248.600 ms[39m
+[35m[39m
+2022-08-15 15:32:57:3257 [35mhttp[39m: [35mPOST /signup 200 - 1077.687 ms[39m
+[35m[39m
+2022-08-15 15:36:03:363 [31merror[39m: [31mThere is user with this email: courier@gmail.com[39m
+2022-08-15 15:36:03:363 [35mhttp[39m: [35mPOST /signup 400 - 420.879 ms[39m
+[35m[39m
+2022-08-15 15:36:23:3623 [35mhttp[39m: [35mPOST /signup 200 - 995.008 ms[39m
+[35m[39m
+2022-08-15 15:36:36:3636 [35mhttp[39m: [35mPOST /signup 200 - 682.426 ms[39m
+[35m[39m
+2022-08-15 15:51:35:5135 [31merror[39m: [31mNo token available[39m
+2022-08-15 15:51:35:5135 [35mhttp[39m: [35mGET /products?name=i 401 - 75.903 ms[39m
+[35m[39m
+2022-08-15 15:52:01:521 [31merror[39m: [31mInvalid status code: Auth[39m
+2022-08-15 15:52:05:525 [35mhttp[39m: [35mGET /login - - 3.267 ms[39m
+[35m[39m
+2022-08-15 15:52:09:529 [35mhttp[39m: [35mPOST /login 400 - 244.583 ms[39m
+[35m[39m
+2022-08-15 15:52:47:5247 [35mhttp[39m: [35mPOST /login 400 - 369.405 ms[39m
+[35m[39m
+2022-08-15 15:53:15:5315 [35mhttp[39m: [35mPOST /login 400 - 236.424 ms[39m
+[35m[39m
+2022-08-15 15:53:22:5322 [35mhttp[39m: [35mPOST /login 400 - 306.021 ms[39m
+[35m[39m
+2022-08-15 15:53:37:5337 [35mhttp[39m: [35mPOST /login 400 - 235.460 ms[39m
+[35m[39m
+2022-08-15 15:53:57:5357 [35mhttp[39m: [35mPOST /signup 200 - 1414.033 ms[39m
+[35m[39m
+2022-08-15 15:54:20:5420 [35mhttp[39m: [35mGET /products?name=i 200 - 463.875 ms[39m
+[35m[39m
+2022-08-15 15:54:59:5459 [35mhttp[39m: [35mGET /products?name=i 200 - 954.010 ms[39m
+[35m[39m
+2022-08-15 15:55:59:5559 [35mhttp[39m: [35mGET /products?name=i 200 - 718.000 ms[39m
+[35m[39m
+2022-08-15 15:56:12:5612 [31merror[39m: [31mCast to Object failed for value "62f95a9a9c20648c3b97fe9c" (type string) at path "$or.0" for model "Product"[39m
+2022-08-15 15:56:12:5612 [35mhttp[39m: [35mGET /products/62f95a9a9c20648c3b97fe9c 500 - 20.016 ms[39m
+[35m[39m
+2022-08-15 15:58:53:5853 [35mhttp[39m: [35mGET /products/62f95a9a9c20648c3b97fe9c 200 - 604.727 ms[39m
+[35m[39m
+2022-08-15 18:20:41:2041 [31merror[39m: [31m$regex has to be a string[39m
+2022-08-15 18:20:41:2041 [35mhttp[39m: [35mGET /search 500 - 275.210 ms[39m
+[35m[39m
+2022-08-15 18:20:59:2059 [35mhttp[39m: [35mGET /search?name=i 200 - 472.220 ms[39m
+[35m[39m
+2022-08-15 18:21:07:217 [35mhttp[39m: [35mGET /search?name=s 200 - 459.187 ms[39m
+[35m[39m
+2022-08-15 18:21:45:2145 [35mhttp[39m: [35mGET /search?name=s 200 - 487.813 ms[39m
+[35m[39m
+2022-08-15 18:21:55:2155 [35mhttp[39m: [35mGET /search?name=z 200 - 248.862 ms[39m
+[35m[39m
+2022-08-15 18:22:00:220 [35mhttp[39m: [35mGET /search?name=i 200 - 463.727 ms[39m
+[35m[39m
+2022-08-15 18:45:03:453 [31merror[39m: [31m$regex has to be a string[39m
+2022-08-15 18:45:03:453 [35mhttp[39m: [35mGET /search?cost=100$ 500 - 285.934 ms[39m
+[35m[39m
+2022-08-15 18:45:37:4537 [31merror[39m: [31m$regex has to be a string[39m
+2022-08-15 18:45:37:4537 [35mhttp[39m: [35mGET /search?cost=100$ 500 - 266.941 ms[39m
+[35m[39m
+2022-08-15 19:02:55:255 [31merror[39m: [31m$regex has to be a string[39m
+2022-08-15 19:02:55:255 [35mhttp[39m: [35mGET /search?cost=100$ 500 - 235.793 ms[39m
+[35m[39m
+2022-08-15 19:11:41:1141 [31merror[39m: [31m$regex has to be a string[39m
+2022-08-15 19:11:41:1141 [35mhttp[39m: [35mGET /search?cost=100$ 500 - 261.608 ms[39m
+[35m[39m
+2022-08-15 20:25:57:2557 [35mhttp[39m: [35mGET /products 200 - 482.403 ms[39m
+[35m[39m
+2022-08-15 20:40:50:4050 [35mhttp[39m: [35mPOST /products 201 - 253.180 ms[39m
+[35m[39m
+2022-08-15 20:41:00:410 [35mhttp[39m: [35mGET /products 200 - 459.935 ms[39m
+[35m[39m
+2022-08-15 20:42:15:4215 [35mhttp[39m: [35mGET /products 200 - 480.938 ms[39m
+[35m[39m
+2022-08-15 20:42:38:4238 [35mhttp[39m: [35mGET /products 200 - 488.655 ms[39m
+[35m[39m
+2022-08-15 20:43:24:4324 [35mhttp[39m: [35mGET /products 200 - 502.406 ms[39m
+[35m[39m
+2022-08-15 20:43:45:4345 [35mhttp[39m: [35mGET /products 200 - 468.394 ms[39m
+[35m[39m
+2022-08-15 20:46:54:4654 [35mhttp[39m: [35mGET /products 200 - 474.974 ms[39m
+[35m[39m
+2022-08-15 20:47:11:4711 [35mhttp[39m: [35mGET /products 200 - 469.884 ms[39m
+[35m[39m
+2022-08-15 20:51:16:5116 [35mhttp[39m: [35mGET /products 200 - 491.435 ms[39m
+[35m[39m
+2022-08-15 20:51:30:5130 [35mhttp[39m: [35mGET /products 200 - 626.905 ms[39m
+[35m[39m
+2022-08-15 20:52:40:5240 [35mhttp[39m: [35mGET /products 200 - 480.059 ms[39m
+[35m[39m
+2022-08-15 20:52:56:5256 [35mhttp[39m: [35mGET /products 200 - 1017.066 ms[39m
+[35m[39m
+2022-08-15 20:53:23:5323 [35mhttp[39m: [35mGET /products 200 - 478.572 ms[39m
+[35m[39m
+2022-08-15 20:53:37:5337 [35mhttp[39m: [35mGET /products 200 - 484.552 ms[39m
+[35m[39m
+2022-08-15 21:03:53:353 [35mhttp[39m: [35mGET /products 200 - 463.782 ms[39m
+[35m[39m
+2022-08-15 21:04:07:47 [35mhttp[39m: [35mGET /products 200 - 492.745 ms[39m
+[35m[39m
+2022-08-15 21:11:42:1142 [35mhttp[39m: [35mGET /products 200 - 486.291 ms[39m
+[35m[39m
+2022-08-15 21:11:58:1158 [35mhttp[39m: [35mGET /products 200 - 493.520 ms[39m
+[35m[39m
+2022-08-15 21:12:29:1229 [35mhttp[39m: [35mGET /products 200 - 461.414 ms[39m
+[35m[39m
+2022-08-15 21:12:44:1244 [35mhttp[39m: [35mGET /products 200 - 533.268 ms[39m
+[35m[39m
+2022-08-15 21:13:19:1319 [35mhttp[39m: [35mGET /products 200 - 484.952 ms[39m
+[35m[39m
+2022-08-15 22:34:44:3444 [35mhttp[39m: [35mGET /products 200 - 483.292 ms[39m
+[35m[39m
+2022-08-15 22:35:07:357 [35mhttp[39m: [35mGET /products 200 - 462.903 ms[39m
+[35m[39m
+2022-08-15 22:36:11:3611 [35mhttp[39m: [35mGET /products 200 - 467.302 ms[39m
+[35m[39m
+2022-08-15 22:36:35:3635 [35mhttp[39m: [35mGET /products 200 - 460.764 ms[39m
+[35m[39m
+2022-08-15 22:39:28:3928 [35mhttp[39m: [35mGET /products 200 - 486.596 ms[39m
+[35m[39m
+2022-08-15 22:39:45:3945 [35mhttp[39m: [35mGET /products 200 - 493.603 ms[39m
+[35m[39m
+2022-08-15 22:39:58:3958 [35mhttp[39m: [35mGET /products 200 - 476.984 ms[39m
+[35m[39m
+2022-08-16 00:00:45:045 [35mhttp[39m: [35mGET / 404 - 5.947 ms[39m
+[35m[39m
+2022-08-16 23:41:27:4127 [31merror[39m: [31mjwt token yaroqsiz[39m
+2022-08-16 23:41:27:4127 [35mhttp[39m: [35mPOST /products 500 - 81.178 ms[39m
+[35m[39m
+2022-08-16 23:41:46:4146 [31merror[39m: [31mCannot set headers after they are sent to the client[39m
+2022-08-16 23:41:46:4146 [35mhttp[39m: [35mPOST /login 500 - 436.846 ms[39m
+[35m[39m
+2022-08-16 23:42:45:4245 [31merror[39m: [31mCannot set headers after they are sent to the client[39m
+2022-08-16 23:42:45:4245 [35mhttp[39m: [35mPOST /login 500 - 660.242 ms[39m
+[35m[39m
+2022-08-16 23:43:01:431 [31merror[39m: [31mCannot read properties of undefined (reading 'path')[39m
+2022-08-16 23:43:01:431 [35mhttp[39m: [35mPOST /products 500 - 243.555 ms[39m
+[35m[39m
+2022-08-16 23:43:50:4350 [31merror[39m: [31mCannot read properties of undefined (reading 'path')[39m
+2022-08-16 23:43:50:4350 [35mhttp[39m: [35mPOST /products 500 - 251.707 ms[39m
+[35m[39m
+2022-08-16 23:44:50:4450 [31merror[39m: [31mCannot read properties of undefined (reading 'path')[39m
+2022-08-16 23:44:50:4450 [35mhttp[39m: [35mPOST /products 500 - 271.397 ms[39m
+[35m[39m
+2022-08-16 23:47:25:4725 [31merror[39m: [31mCannot read properties of undefined (reading 'path')[39m
+2022-08-16 23:47:25:4725 [35mhttp[39m: [35mPOST /products 500 - 249.934 ms[39m
+[35m[39m
+2022-08-16 23:48:23:4823 [31merror[39m: [31mCannot read properties of undefined (reading 'file')[39m
+2022-08-16 23:48:23:4823 [35mhttp[39m: [35mPOST /products 500 - 378.504 ms[39m
+[35m[39m
+2022-08-16 23:53:24:5324 [31merror[39m: [31mNot found with  undefined[39m
+2022-08-16 23:53:24:5324 [35mhttp[39m: [35mPOST /products 400 - 253.621 ms[39m
+[35m[39m
+2022-08-17 00:02:32:232 [35mhttp[39m: [35mGET / 404 - 2.344 ms[39m
+[35m[39m
+2022-08-17 00:02:34:234 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-16T19:02:34.859Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-17 00:06:15:615 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-16T19:06:15.110Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-17 00:06:44:644 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-16T19:06:44.653Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 00:37:50:3750 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-17T19:37:50.462Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 00:45:25:4525 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-17T19:45:25.802Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 00:50:32:5032 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-17T19:50:32.535Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 00:51:20:5120 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-17T19:51:20.687Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 00:52:14:5214 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-17T19:52:14.523Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 00:57:00:570 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-17T19:57:00.761Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 01:06:18:618 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-17T20:06:18.000Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 01:09:06:96 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-17T20:09:06.475Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 01:23:56:2356 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-17T20:23:56.127Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 01:30:47:3047 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-17T20:30:47.355Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 01:41:29:4129 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-17T20:41:29.469Z-image_2022-08-12_13-30-15.png'[39m
+2022-08-18 11:40:32:4032 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-18T06:40:32.022Z-photo_2022-08-08_19-29-42.jpg'[39m
+2022-08-18 11:44:58:4458 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-18T06:44:58.367Z-photo_2022-08-08_19-29-42.jpg'[39m
+2022-08-18 11:46:16:4616 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-18T06:46:16.931Z-photo_2022-08-08_19-29-42.jpg'[39m
+2022-08-18 11:48:19:4819 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-18T06:48:19.275Z-2018-10-04T08_39_16.889Z-boat.png'[39m
+2022-08-18 11:50:00:500 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-18T06:50:00.221Z-2018-10-04T08_39_16.889Z-boat.png'[39m
+2022-08-18 11:51:10:5110 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-18T06:51:10.304Z-2018-10-04T08_39_16.889Z-boat.png'[39m
+2022-08-18 15:16:59:1659 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-18T10:16:59.031Z-2018-10-04T08_39_16.889Z-boat.png'[39m
