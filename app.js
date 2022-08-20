@@ -7,7 +7,7 @@ const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
 var multer = require('multer');
 var morgan = require('morgan')
-const helmet = require('helmet');
+// const helmet = require('helmet');
 require('dotenv').config()
  
 const Logger = require('./config/logger');
@@ -66,7 +66,7 @@ app.use(
   multer({ storage: fileStorage, fileFilter: fileFilter }).single('image')
 );
 app.use('./images', express.static(path.join(__dirname, 'images')));
-app.use(helmet());
+// app.use(helmet());
 app.use(morgan('combined', { stream: accessLogStream }));
 
 app.use(morganMiddleware);
