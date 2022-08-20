@@ -1,0 +1,693 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Personal Manager 2.0",
+      "description": "Personal Manager Application API",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "Manager",
+        "description": "API for Manager in the system"
+      }
+    ],
+    "schemes": [
+      "https"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/signup": {
+        "post": {
+          "tags": [
+            "Users"
+          ],
+          "description": "Create new user in system",
+          "parameters": [
+            {
+              "name": "user",
+              "in": "body",
+              "description": "User that we want to create",
+              "schema": {
+                "$ref": "#/definitions/User"
+              }
+            }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "201": {
+              "description": "New user is created",
+              "schema": {
+                "$ref": "#/definitions/User"
+              }
+            }
+          }
+        } 
+      },
+      "/login": {
+        "post": {
+            "tags": [
+              "Users"
+            ],
+            "summary": "Login users",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/Users"
+                }
+              }
+            }
+          }
+      },
+      "/logout": {
+        "post": {
+            "tags": [
+              "Users"
+            ],
+            "summary": "Logout user",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/UsersLogout"
+                }
+              }
+            }
+          }
+      },
+      "/produts": {
+        "get": {
+            "tags": [
+              "Products"
+            ],
+            "summary": "Get all product in system",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/productGet"
+                }
+              }
+            }
+          }
+      },
+      "/produts/create": {
+        "post": {
+            "tags": [
+              "Products"
+            ],
+            "summary": "Create product in system",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/product"
+                }
+              }
+            }
+          }
+      },
+      "/produts/{id}": {
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID of products that we want to find",
+            "type": "integer"
+          }
+        ],
+        "delete": {
+          "summary": "Delete products with given ID",
+          "tags": [
+            "Products"
+          ],
+          "responses": {
+            "200": {
+              "description": "Products is deleted",
+              "schema": {
+                "$ref": "#/definitions/productDelete"
+              }
+            }
+          }
+        },
+        "get": {
+          "summary": "get one products with given ID",
+          "tags": [
+            "Products"
+          ],
+          "responses": {
+            "200": {
+              "description": "Products is deleted",
+              "schema": {
+                "$ref": "#/definitions/productOne"
+              }
+            }
+          }
+        },
+        "put": {
+          "summary": "Update products with give ID",
+          "tags": [
+            "Products"
+          ],
+          "parameters": [
+            {
+              "name": "products",
+              "in": "body",
+              "description": "products with new values of properties",
+              "schema": {
+                "$ref": "#/definitions/product"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "products is updated",
+              "schema": {
+                "$ref": "#/definitions/product"
+              }
+            }
+          }
+        }
+      },
+      "/category": {
+        "get": {
+            "tags": [
+              "Category"
+            ],
+            "summary": "Get all category in system",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/category"
+                }
+              }
+            }
+          }
+      },
+      "/category/create": {
+        "post": {
+            "tags": [
+              "Category"
+            ],
+            "summary": "Get create category in system",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/Postcategory"
+                }
+              }
+            }
+          }
+      },
+      "/category/{id}": {
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID of category that we want to find",
+            "type": "integer"
+          }
+        ],
+        "get": {
+          "summary": "Delete category with given ID",
+          "tags": [
+            "Category"
+          ],
+          "responses": {
+            "200": {
+              "description": "Category is deleted",
+              "schema": {
+                "$ref": "#/definitions/categoryOne"
+              }
+            }
+          }
+        }
+      },
+      "/accountant": {
+        "get": {
+            "tags": [
+              "accountant"
+            ],
+            "summary": "Get all accountant in system",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/accountantGet"
+                }
+              }
+            }
+          }
+      },
+      "/accountant/{id}": {
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID of accountant that we want to find",
+            "type": "integer"
+          }
+        ],
+        "get": {
+          "summary": "Delete accountant with given ID",
+          "tags": [
+            "accountant"
+          ],
+          "responses": {
+            "200": {
+              "description": "Category is deleted",
+              "schema": {
+                "$ref": "#/definitions/accountantOne"
+              }
+            }
+          }
+        },
+        "put": {
+          "summary": "Update accountant with give ID",
+          "tags": [
+            "accountant"
+          ],
+          "parameters": [
+            {
+              "name": "accountant",
+              "in": "body",
+              "description": "accountant with new values of properties",
+              "schema": {
+                "$ref": "#/definitions/accountant"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "accountant is updated",
+              "schema": {
+                "$ref": "#/definitions/accountant"
+              }
+            }
+          }
+        }
+      },
+      "/courier": {
+        "get": {
+            "tags": [
+              "courier"
+            ],
+            "summary": "Get all courier in system",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/courierGet"
+                }
+              }
+            }
+          }
+      },
+      "/courier/{id}": {
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID of courier that we want to find",
+            "type": "integer"
+          }
+        ],
+        "get": {
+          "summary": "Delete courier with given ID",
+          "tags": [
+            "courier"
+          ],
+          "responses": {
+            "200": {
+              "description": "Category is deleted",
+              "schema": {
+                "$ref": "#/definitions/courierOne"
+              }
+            }
+          }
+        },
+        "put": {
+          "summary": "Update courier with give ID",
+          "tags": [
+            "courier"
+          ],
+          "parameters": [
+            {
+              "name": "courier",
+              "in": "body",
+              "description": "courier with new values of properties",
+              "schema": {
+                "$ref": "#/definitions/accountant"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "courier is updated",
+              "schema": {
+                "$ref": "#/definitions/courier"
+              }
+            }
+          }
+        }
+      },
+      "/operator": {
+        "get": {
+            "tags": [
+              "operator"
+            ],
+            "summary": "Get all operator in system",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/operatorGet"
+                }
+              }
+            }
+          }
+      },
+      "/search": {
+        "get": {
+            "tags": [
+              "search"
+            ],
+            "summary": "search all in system",
+            "responses": {
+              "200": {
+                "description": "OK",
+                "schema": {
+                  "$ref": "#/definitions/searchGet"
+                }
+              }
+            }
+          }
+      },
+      "/operator/{id}": {
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "ID of operator that we want to find",
+            "type": "integer"
+          }
+        ],
+        "get": {
+          "summary": "Delete operator with given ID",
+          "tags": [
+            "operator"
+          ],
+          "responses": {
+            "200": {
+              "description": "operator is get",
+              "schema": {
+                "$ref": "#/definitions/operatorOne"
+              }
+            }
+          }
+        },
+        "put": {
+          "summary": "Update operator with give ID",
+          "tags": [
+            "operator"
+          ],
+          "parameters": [
+            {
+              "name": "operator",
+              "in": "body",
+              "description": "operator with new values of properties",
+              "schema": {
+                "$ref": "#/definitions/operator"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "operator is updated",
+              "schema": {
+                "$ref": "#/definitions/operator"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+        "User": {
+            "required": [
+              "id",
+              "email",
+              "password",
+              "userType"
+            ],
+            "properties": {
+              "id": {
+                "type": "integer",
+                "uniqueItems": true
+              },
+              "password": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "userType": {
+                "type": "string"
+              }
+            }
+          },
+       "product": {
+        "required": [
+          "id",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "uniqueItems": true
+          },
+          "categoryId": {
+            "type": "integer",
+            "uniqueItems": true
+          },                       
+          "image": {
+            "type": "string"
+          },                       
+          "name": {                       
+            "type": "string"                       
+          },                       
+          "count": {                       
+            "type": "number"                       
+          },                       
+          "discount": {                       
+            "type": "number"                       
+          },                       
+          "cost": {                       
+            "type": "string"                       
+          },                       
+          "createdAt": {                       
+            "type": "string",                       
+            "format": "date"                       
+          },                       
+          "updatedAt": {                       
+            "type": "string",                       
+            "format": "date"                       
+          },                       
+          "status": {                       
+            "type": "string"                       
+          }                       
+                                
+        }                       
+      },                       
+       "accountant": {
+        "required": [
+          "id",
+          "status"
+        ],
+        "properties": {                  
+          "status": {                       
+            "type": "string"                       
+          }                                
+        }                       
+      },                       
+       "operator": {
+        "required": [
+          "id",
+          "status"
+        ],
+        "properties": {                  
+          "status": {                       
+            "type": "string"                       
+          }                                
+        }                       
+      },                       
+       "courier": {
+        "required": [
+          "id",
+          "status"
+        ],
+        "properties": {                  
+          "status": {                       
+            "type": "string"                       
+          }                                
+        }                       
+      },                       
+       "productGet": {},                       
+       "productOne": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "uniqueItems": true
+          }
+        }
+       },                       
+       "productDelete": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "uniqueItems": true
+          }
+        }
+       },                       
+      "updateUser": {                       
+        "required": [                       
+          "title",                       
+          "price",                       
+          "id"                       
+        ],                       
+        "properties": {                      
+          "title": {                       
+            "type": "string"                       
+          },                                      
+          "price": {                       
+            "type": "string"                       
+          }                                      
+          },                       
+          "id": {                       
+            "type": "integer",                       
+            "uniqueItems": true                       
+          }                       
+        },                       
+       "category": {},                       
+       "accountantGet": {},                       
+       "courierGet": {},                       
+       "operatorGet": {},                       
+       "searchGet": {},                       
+       "Postcategory": {                       
+        "required": [
+            "name",                       
+            "id" 
+        ],
+        "properties": {                       
+            "name": {                       
+              "type": "string"                                  
+            },                       
+            "id": {                       
+              "type": "integer",                       
+              "uniqueItems": true                       
+            }                       
+          }                       
+        },                       
+       "categoryOne": {                       
+        "required": [                   
+            "id" 
+        ],
+        "properties": {                      
+            "id": {                       
+              "type": "integer",                       
+              "uniqueItems": true                       
+            }                       
+          }                       
+        },                       
+       "accountantOne": {                       
+        "required": [                   
+            "id" 
+        ],
+        "properties": {                      
+            "id": {                       
+              "type": "integer",                       
+              "uniqueItems": true                       
+            }                       
+          }                       
+        },                       
+       "courierOne": {                       
+        "required": [                   
+            "id" 
+        ],
+        "properties": {                      
+            "id": {                       
+              "type": "integer",                       
+              "uniqueItems": true                       
+            }                       
+          }                       
+        },                       
+       "operatorOne": {                       
+        "required": [                   
+            "id" 
+        ],
+        "properties": {                      
+            "id": {                       
+              "type": "integer",                       
+              "uniqueItems": true                       
+            }                       
+          }                       
+        },                       
+        "updatecategory": {                       
+            "required": [                       
+                "name",                       
+                "id"                       
+        ],                       
+        "properties": {                       
+          "name": {                       
+            "type": "string"                                  
+          },                       
+          "id": {                       
+            "type": "integer",                       
+            "uniqueItems": true                       
+          }                       
+        }
+        },
+        "Users": {
+            "required": [
+                "email",
+                "password"
+              ],
+            "properties": {
+              "password": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+                }
+            }
+        },
+        "UsersLogout": {}
+    }                       
+  }
+  
