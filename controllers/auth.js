@@ -32,7 +32,6 @@ const authController = {
         })
     },
     postLogin: (req,res,next) => {
-        // res.setHeader('Set-Cookie', 'loggedIn=true','httpOnly')
         const email = req.body.email;
         const password = req.body.password;
         const userType = req.body.userType;
@@ -51,7 +50,7 @@ const authController = {
                 if(doMatch){
                     req.session.isLoggedIn = true
                     req.session.user = user
-                    res.status(200).json(token)
+                    return res.status(200).json(token)
                 }
                 res.status(400).json('not user')
             })
