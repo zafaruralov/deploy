@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // const PDFDocument = require('pdfkit');
-
+const { validationResult } = require('express-validator/check');
 const Products = require('../models/products')
 const AppError = require('../utils/AppError')
 
@@ -11,11 +11,9 @@ const ITEM_PER_PAGE = 10
 
 const productController = {
     getAll: (req,res,next) => {
-        // const filteredProduct= Products.find(req.query).then(() => {return res.status(200).json(filteredProduct)})
         const page = +req.query.page || 1
         let totalItem;
         Products.find({}).populate('categoryId')
-        // .sort({name: -1, cost:1 ,count:-1,createdAt:-1, updatedAt:-1,categoryId:1 })
         .countDocuments().then(numProducts => {
             totalItem = numProducts
             return Products.find().sort({ "cost": -1 }).skip((page -1) * ITEM_PER_PAGE).limit(ITEM_PER_PAGE)
@@ -24,6 +22,17 @@ const productController = {
         })
     },
     createProducts: (req,res,next) => {
+        const errors = validationResult(req);
+        if (!errors.isEmpty()) {
+          const error = new Error('Validation failed, entered data is incorrect.');
+          error.statusCode = 422;
+          throw error;
+        }
+        if (!req.file) {
+          const error = new Error('No image provided.');
+          error.statusCode = 422;
+          throw error;
+        }
         const name = req.body.name
         const cost = req.body.cost
         const count = req.body.count
@@ -31,13 +40,6 @@ const productController = {
         const discount = req.body.discount
         const status = req.body.status
         const categoryId = req.body.categoryId
-        console.log('--',req.file.path)
-        // const imageUrl = image.path;
-        if (!image) {
-            Error();
-            const err = new AppError(400, `Not found with  ${image}`);
-            return next(err);
-        }
         const product = new Products({
             name: name,
             cost:cost,
@@ -47,9 +49,6 @@ const productController = {
             discount:discount,
             status:status,
         })
-        // let payload = req.body.payload.trim();
-        // let search = await Products.find({name: {$regex: new RegExp('^'+payload+'.*','i')}}).exec()
-        // search = search.slice(0,10)
         product.save().then(result => {
             res.status(201).json(result)
         }).catch(err => next(err))
@@ -65,7 +64,7 @@ const productController = {
         const name = req.body.name
         const cost = req.body.cost
         const count = req.body.count
-        const image = req.body.image
+        const image = req.file.path
         const discount = req.body.discount
         const categoryId = req.body.categoryId
         const productId = req.params.id
@@ -85,35 +84,5 @@ const productController = {
         const productsId= req.params.id
         Products.findByIdAndRemove(productsId).then(result => res.status(200).json(`Product deleted successfully`)).catch(err => next(err))
     },
-    getInvoice: (req,res,next) => {
-        const orderId = req.file.path 
-        Products.findById(orderId)
-            .then(order => {
-                if (!order) {
-                return next(new Error('No order found.'));
-                }
-                const invoiceName = 'invoice-' + orderId + '.pdf';
-                const invoicePath = path.join('data', 'invoices', invoiceName);
-                // fs.readFile(invoicePath, (err, data) => {
-                //   if (err) {
-                //     return next(err);
-                //   }
-                //   res.setHeader('Content-Type', 'application/pdf');
-                //   res.setHeader(
-                //     'Content-Disposition',
-                //     'inline; filename="' + invoiceName + '"'
-                //   );
-                //   res.send(data);
-                // });
-                const file = fs.createReadStream(invoicePath);
-                res.setHeader('Content-Type', 'application/pdf');
-                res.setHeader(
-                'Content-Disposition',
-                'inline; filename="' + invoiceName + '"'
-                );
-                file.pipe(res);
-            })
-            .catch(err => next(err));
-        }
 }
 module.exports = productController

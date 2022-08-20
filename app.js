@@ -54,6 +54,20 @@ const fileFilter = (req, file, cb) => {
   }
 };
 
+app.use(
+  multer({ storage: fileStorage, fileFilter: fileFilter }).single('image')
+);
+app.use('/images', express.static(path.join(__dirname, 'images')));
+
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader(
+    'Access-Control-Allow-Methods',
+    'OPTIONS, GET, POST, PUT, PATCH, DELETE'
+  );
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
 const accessLogStream = fs.createWriteStream(
   path.join(__dirname, 'access.log'),
   { flags: 'a' }
@@ -61,11 +75,6 @@ const accessLogStream = fs.createWriteStream(
 
 app.use(express.json()); 
 
-app.use(express.urlencoded({ extended: false }));
-app.use(
-  multer({ storage: fileStorage, fileFilter: fileFilter }).single('image')
-);
-app.use('./images', express.static(path.join(__dirname, 'images')));
 app.use(helmet());
 app.use(morgan('combined', { stream: accessLogStream }));
 
@@ -77,7 +86,7 @@ app.use(session({
   store:store
 }))
 app.use(
-  '/',
+  '/api-docs',
   swaggerUi.serve, 
   swaggerUi.setup(swaggerDocument)
 );

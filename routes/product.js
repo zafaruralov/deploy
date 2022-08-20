@@ -2,10 +2,6 @@ const productController = require('../controllers/products.js')
 const authUser = require('../middlewares/userType.js');
 const productsRouter = require('express').Router()
 
-// productsRouter
-//     .route('/:imageId')
-//     .get(authUser.checkUserType('superAdmin'),upload.single('image'), productController.getInvoice)
-
 productsRouter
     .route('/')
     .get(authUser.checkUserType('superAdmin'),productController.getAll)

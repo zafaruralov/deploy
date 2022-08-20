@@ -444,3 +444,30 @@
 2022-08-18 11:50:00:500 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-18T06:50:00.221Z-2018-10-04T08_39_16.889Z-boat.png'[39m
 2022-08-18 11:51:10:5110 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-18T06:51:10.304Z-2018-10-04T08_39_16.889Z-boat.png'[39m
 2022-08-18 15:16:59:1659 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-18T10:16:59.031Z-2018-10-04T08_39_16.889Z-boat.png'[39m
+2022-08-21 01:46:08:468 [35mhttp[39m: [35mPOST /lproducts 200 - 247.051 ms[39m
+[35m[39m
+2022-08-21 01:46:27:4627 [35mhttp[39m: [35mPOST /lproducts 404 - 264.287 ms[39m
+[35m[39m
+2022-08-21 01:46:35:4635 [31merror[39m: [31mCannot read properties of undefined (reading 'path')[39m
+2022-08-21 01:46:35:4635 [35mhttp[39m: [35mPOST /products 500 - 282.044 ms[39m
+[35m[39m
+2022-08-21 01:49:51:4951 [31merror[39m: [31mCannot read properties of undefined (reading 'path')[39m
+2022-08-21 01:49:51:4951 [35mhttp[39m: [35mPOST /products 500 - 252.195 ms[39m
+[35m[39m
+2022-08-21 01:50:05:505 [31merror[39m: [31mCannot read properties of undefined (reading 'path')[39m
+2022-08-21 01:50:05:505 [35mhttp[39m: [35mPOST /products 500 - 276.820 ms[39m
+[35m[39m
+2022-08-21 01:51:37:5137 [31merror[39m: [31mCannot read properties of undefined (reading 'path')[39m
+2022-08-21 01:51:37:5137 [35mhttp[39m: [35mPOST /products 500 - 268.389 ms[39m
+[35m[39m
+2022-08-21 01:52:52:5252 [31merror[39m: [31mCannot read properties of undefined (reading 'path')[39m
+2022-08-21 01:52:52:5252 [35mhttp[39m: [35mPOST /products 500 - 295.277 ms[39m
+[35m[39m
+2022-08-21 02:02:22:222 [31merror[39m: [31mNo image provided.[39m
+2022-08-21 02:02:22:222 [35mhttp[39m: [35mPOST /products 422 - 267.151 ms[39m
+[35m[39m
+2022-08-21 02:02:35:235 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-20T21:02:35.300Z-2018-10-04T08_39_16.889Z-boat.png'[39m
+2022-08-21 02:03:36:336 [31merror[39m: [31mNo image provided.[39m
+2022-08-21 02:03:36:336 [35mhttp[39m: [35mPOST /products 422 - 274.142 ms[39m
+[35m[39m
+2022-08-21 02:06:17:617 [31merror[39m: [31mENOENT: no such file or directory, open 'D:\Zafar\adminJs\images\2022-08-20T21:06:17.265Z-2018-10-04T08_39_16.889Z-boat.png'[39m
