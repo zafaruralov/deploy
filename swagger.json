@@ -9,7 +9,7 @@
         "url": "https://opensource.org/licenses/MIT"
       }
     },
-    "host": "https://businessanalyst.herokuapp.com/",
+    "host": "https://businessanalyst.herokuapp.com",
     "basePath": "/",
     "tags": [
       {
