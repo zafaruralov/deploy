@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const path = require('path');
 const fs = require('fs')
 
@@ -8,6 +9,7 @@ const MongoDBStore = require('connect-mongodb-session')(session);
 var multer = require('multer');
 var morgan = require('morgan')
 const helmet = require('helmet');
+const { v4: uuidv4 } = require('uuid');
 require('dotenv').config()
  
 const Logger = require('./config/logger');
@@ -25,20 +27,20 @@ const authUser = require('./middlewares/userType.js');
 const swaggerUi = require('swagger-ui-express')
 let swaggerDocument = require('./swagger.json');
 
-const MONGODB_URI = 'mongodb+srv://zafaruralov:1A1s1D1f0@cluster0.rwu0b.mongodb.net/demoBro?retryWrites=true&w=majority';
+const MONGODB_URI = process.env.MONGO_URI
 
 const app = express();
 const store = new MongoDBStore({
   uri: MONGODB_URI,
   collection: 'session'
 })
-
-const fileStorage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, 'images');
+ 
+const storage = multer.diskStorage({
+  destination: function(req, file, cb) {
+      cb(null, 'images');
   },
-  filename: (req, file, cb) => {
-    cb(null, new Date().toISOString() + '-' + file.originalname);
+  filename: function(req, file, cb) {
+      cb(null, uuidv4())
   }
 });
 
@@ -55,7 +57,7 @@ const fileFilter = (req, file, cb) => {
 };
 
 app.use(
-  multer({ storage: fileStorage, fileFilter: fileFilter }).single('image')
+  multer({ storage: storage, fileFilter: fileFilter }).single('image')
 );
 app.use('/images', express.static(path.join(__dirname, 'images')));
 

@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // const PDFDocument = require('pdfkit');
-const { validationResult } = require('express-validator/check');
+const { validationResult } = require('express-validator');
 const Products = require('../models/products')
 const AppError = require('../utils/AppError')
 
@@ -36,7 +36,7 @@ const productController = {
         const name = req.body.name
         const cost = req.body.cost
         const count = req.body.count
-        const image = req.file.path 
+        const imageUrl = req.file.path.replace("\\" ,"/");
         const discount = req.body.discount
         const status = req.body.status
         const categoryId = req.body.categoryId
@@ -44,7 +44,7 @@ const productController = {
             name: name,
             cost:cost,
             count:count,
-            image:image,
+            imageUrl:imageUrl,
             categoryId:categoryId,
             discount:discount,
             status:status,
@@ -64,7 +64,7 @@ const productController = {
         const name = req.body.name
         const cost = req.body.cost
         const count = req.body.count
-        const image = req.file.path
+        const imageUrl = req.file.path.replace("\\","/");
         const discount = req.body.discount
         const categoryId = req.body.categoryId
         const productId = req.params.id
@@ -72,7 +72,7 @@ const productController = {
             product.name = name,
             product.cost = cost,
             product.count = count,
-            product.image = image,
+            product.imageUrl = imageUrl,
             product.categoryId = categoryId,
             product.discount = discount
             return product.save();
