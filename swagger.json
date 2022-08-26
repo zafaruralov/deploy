@@ -17,8 +17,24 @@
         "description": "API for Manager in the system"
       }
     ],
+    "components": [
+      {
+        "securitySchemes":[{
+          "bearerAuth:": [{
+            "type": "https",
+            "scheme": "bearer",
+            "bearerFormat": "JWT"
+          }]
+        }]
+      }
+    ],
     "schemes": [
       "https"
+    ],
+    "security":[
+      {
+        "bearerAuth": []
+      }
     ],
     "consumes": [
       "application/json"
@@ -93,6 +109,11 @@
             "tags": [
               "Products"
             ],
+            "security":[
+              {
+                "bearerAuth": []
+              }
+            ],
             "summary": "Get all product in system",
             "responses": {
               "200": {
@@ -108,6 +129,11 @@
         "post": {
             "tags": [
               "Products"
+            ],
+            "security":[
+              {
+                "bearerAuth": []
+              }
             ],
             "summary": "Create product in system",
             "responses": {
@@ -188,6 +214,11 @@
             "tags": [
               "Category"
             ],
+            "security":[
+              {
+                "bearerAuth": []
+              }
+            ],
             "summary": "Get all category in system",
             "responses": {
               "200": {
@@ -203,6 +234,11 @@
         "post": {
             "tags": [
               "Category"
+            ],
+            "security":[
+              {
+                "bearerAuth": []
+              }
             ],
             "summary": "Get create category in system",
             "responses": {
@@ -244,6 +280,11 @@
         "get": {
             "tags": [
               "accountant"
+            ],
+            "security":[
+              {
+                "bearerAuth": []
+              }
             ],
             "summary": "Get all accountant in system",
             "responses": {
@@ -310,6 +351,11 @@
             "tags": [
               "courier"
             ],
+            "security":[
+              {
+                "bearerAuth": []
+              }
+            ],
             "summary": "Get all courier in system",
             "responses": {
               "200": {
@@ -375,6 +421,11 @@
             "tags": [
               "operator"
             ],
+            "security":[
+              {
+                "bearerAuth": []
+              }
+            ],
             "summary": "Get all operator in system",
             "responses": {
               "200": {
@@ -390,6 +441,11 @@
         "get": {
             "tags": [
               "search"
+            ],
+            "security":[
+              {
+                "bearerAuth": []
+              }
             ],
             "summary": "search all in system",
             "responses": {
